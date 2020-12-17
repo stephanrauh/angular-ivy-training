@@ -1,10 +1,26 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input } from "@angular/core";
 
 @Component({
-  selector: 'hello',
-  template: `<h1>Hello {{name}}!</h1>`,
-  styles: [`h1 { font-family: Lato; }`]
+  selector: "hello",
+  template: `
+    <h4>Hello {{ name }}!</h4>
+    <strong>Um 09:40 Uhr geht es weiter! </strong>
+  `,
+  styles: [
+    `
+      h4 {
+        font-family: Lato;
+        font-size: 60px;
+      }
+    `
+  ]
 })
-export class HelloComponent  {
+export class HelloComponent {
   @Input() name: string;
+
+  public begruessung: string = "Hallo";
+
+  ngOnInit() {
+    console.log(`Das ist die Begrüßung: ${this.begruessung}`);
+  }
 }
