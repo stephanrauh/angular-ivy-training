@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { MenuComponent } from './menu/menu.component';
 import { OverviewComponent } from './overview/overview.component';
 import { CountryComponent } from './country/country.component';
+import { PauseComponent } from './pause/pause.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
@@ -17,7 +18,7 @@ import { CountryComponent } from './country/country.component';
     HeaderComponent, 
     MenuComponent, 
     OverviewComponent, 
-    CountryComponent ],
+    CountryComponent, PauseComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
