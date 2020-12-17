@@ -11,7 +11,13 @@ import { CountryComponent } from './country/country.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent, HeaderComponent, MenuComponent, OverviewComponent, CountryComponent ],
+  declarations: [ 
+    AppComponent, 
+    HelloComponent, 
+    HeaderComponent, 
+    MenuComponent, 
+    OverviewComponent, 
+    CountryComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
